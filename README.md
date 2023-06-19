@@ -1,1 +1,1 @@
-# CollaborativeModelTool
+# CollaborativeModel Viewpoint Specification
