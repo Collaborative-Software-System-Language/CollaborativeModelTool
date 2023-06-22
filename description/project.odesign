@@ -260,32 +260,6 @@
               </style>
             </conditionnalStyles>
           </borderedNodeMappings>
-          <borderedNodeMappings name="HapticIndicator" semanticCandidatesExpression="aql:self.hapticIndicator" domainClass="cm::HapticIndicator">
-            <conditionnalStyles predicateExpression="aql:self.kind.toString().equalsIgnoreCase('Plateau')">
-              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/collaborative.project.sample/img-hamsters/Plateau.png">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              </style>
-            </conditionnalStyles>
-            <conditionnalStyles predicateExpression="aql:self.kind.toString().equalsIgnoreCase('UpwardSlope')">
-              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/collaborative.project.sample/img-hamsters/Ascenso.png">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              </style>
-            </conditionnalStyles>
-            <conditionnalStyles predicateExpression="aql:self.kind.toString().equalsIgnoreCase('DownwardSlope')">
-              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/collaborative.project.sample/img-hamsters/Descenso.png">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              </style>
-            </conditionnalStyles>
-            <conditionnalStyles predicateExpression="aql:self.kind.toString().equalsIgnoreCase('Hill')">
-              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/collaborative.project.sample/img-hamsters/Hill.png">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              </style>
-            </conditionnalStyles>
-          </borderedNodeMappings>
           <borderedNodeMappings name="Synchronous" semanticCandidatesExpression="[thisEObject/]" domainClass="cm.Awareness">
             <conditionnalStyles predicateExpression="aql:self.synchronous">
               <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="2" labelPosition="node" resizeKind="NSEW" workspacePath="collaborative.project.sample/img-hamsters/online.png">
@@ -445,7 +419,7 @@
           </ownedTools>
         </toolSections>
         <toolSections name="Haptic Decorators">
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Plateau" precondition="[container.oclIsKindOf(Awareness)/]" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='LuismaNew']/@ownedRepresentations[name='Todo']/@additionalLayers[name='Awareness']/@containerMappings[name='Awareness']/@borderedNodeMappings[name='HapticIndicator']" iconPath="/collaborative.project.sample/img-hamsters/Plateau.png">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Plateau" precondition="[container.oclIsKindOf(Awareness)/]" forceRefresh="true" iconPath="/collaborative.project.sample/img-hamsters/Plateau.png">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -454,7 +428,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="UpwardSlope" precondition="[container.oclIsKindOf(Awareness)/]" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='LuismaNew']/@ownedRepresentations[name='Todo']/@additionalLayers[name='Awareness']/@containerMappings[name='Awareness']/@borderedNodeMappings[name='HapticIndicator']" iconPath="/collaborative.project.sample/img-hamsters/Ascenso.png">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="UpwardSlope" precondition="[container.oclIsKindOf(Awareness)/]" forceRefresh="true" iconPath="/collaborative.project.sample/img-hamsters/Ascenso.png">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -467,7 +441,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="DownwardSlope" precondition="[container.oclIsKindOf(Awareness)/]" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='LuismaNew']/@ownedRepresentations[name='Todo']/@additionalLayers[name='Awareness']/@containerMappings[name='Awareness']/@borderedNodeMappings[name='HapticIndicator']" iconPath="/collaborative.project.sample/img-hamsters/Descenso.png">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="DownwardSlope" precondition="[container.oclIsKindOf(Awareness)/]" forceRefresh="true" iconPath="/collaborative.project.sample/img-hamsters/Descenso.png">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -480,7 +454,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Hill" precondition="[container.oclIsKindOf(Awareness)/]" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='LuismaNew']/@ownedRepresentations[name='Todo']/@additionalLayers[name='Awareness']/@containerMappings[name='Awareness']/@borderedNodeMappings[name='HapticIndicator']" iconPath="/collaborative.project.sample/img-hamsters/Hill.png">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Hill" precondition="[container.oclIsKindOf(Awareness)/]" forceRefresh="true" iconPath="/collaborative.project.sample/img-hamsters/Hill.png">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -1906,6 +1880,14 @@
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Awareness" titleExpression="aql:'Awareness Conf. of ' + self.name" domainClass="cm::Awareness" enablePopupBars="true">
       <defaultLayer name="Default">
+        <edgeMappings name="Prox" sourceMapping="//@ownedViewpoints[name='LuismaNew']/@ownedRepresentations[name='Awareness']/@defaultLayer/@containerMappings[name='Awareness']/@subContainerMappings[name='Haptic']/@subNodeMappings[name='HapticIndicator']" targetMapping="//@ownedViewpoints[name='LuismaNew']/@ownedRepresentations[name='Awareness']/@defaultLayer/@containerMappings[name='Awareness']/@subContainerMappings[name='Haptic']/@subNodeMappings[name='HapticIndicator']" targetFinderExpression="aql:self.eContainer().hapticIndicator">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
         <containerMappings name="Awareness" semanticCandidatesExpression="aql:self" domainClass="cm.Awareness">
           <borderedNodeMappings name="Synchronous" semanticCandidatesExpression="[thisEObject/]" domainClass="cm.Awareness">
             <conditionnalStyles predicateExpression="aql:self.synchronous">
@@ -2004,7 +1986,7 @@
           <subContainerMappings name="Haptic" semanticCandidatesExpression="aql:self" domainClass="cm.Awareness">
             <subNodeMappings name="HapticIndicator" semanticCandidatesExpression="aql:self.hapticIndicator" domainClass="cm::HapticIndicator">
               <conditionnalStyles predicateExpression="aql:self.kind.toString().equalsIgnoreCase('Plateau')">
-                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql:self.econtainer().toString()" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="collaborative.project.sample/img-hamsters/Plateau.png">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql:self.name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="collaborative.project.sample/img-hamsters/Plateau.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
@@ -2027,8 +2009,8 @@
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </conditionnalStyles>
-              <conditionnalStyles predicateExpression="aql:self.kind.toString().equalsIgnoreCase('Composite')">
-                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="[''/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="collaborative.project.sample/img-hamsters/Composite.png">
+              <conditionnalStyles predicateExpression="aql:self.kind.toString().equalsIgnoreCase('Pause')">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="[''/]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" workspacePath="/CollaborativeModelSamples/img-hamsters/Reloj.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
@@ -2041,10 +2023,11 @@
                 </style>
               </conditionnalStyles>
             </subNodeMappings>
-            <style xsi:type="style:ShapeContainerStyleDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="aql:'Haptic Configuration'">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="11" showIcon="false" labelExpression="aql:'Frase'">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
           <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="2" labelSize="10" showIcon="false" labelExpression="aql:self.name">
